@@ -34,6 +34,7 @@ eureka:
   instance:
     instance-id: microservicecloud-dept
     prefer-ip-address: true
+    nonSecurePort: ${server.port}
 info:
   app.name: zola-microspringcloud
   company.name: www.zola.com
@@ -42,6 +43,7 @@ info:
 security: 
   basic: 
     enabled: false
+
 ---
 server:
   port: 8002
@@ -75,6 +77,7 @@ eureka:
   instance:
     instance-id: microservicecloud-dept
     prefer-ip-address: true
+    nonSecurePort: ${server.port}
 info:
   app.name: zola-microspringcloud
   company.name: www.zola.com
