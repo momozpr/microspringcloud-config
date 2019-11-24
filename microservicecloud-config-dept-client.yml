@@ -37,7 +37,9 @@ info:
   company.name: www.zola.com
   build.artifactId: @project.artifactId@     # $不起作用，@可以加引号也可以不加
   build.version: @project.version@
-
+security: 
+  basic: 
+    enabled: false
 ---
 server:
   port: 8002
