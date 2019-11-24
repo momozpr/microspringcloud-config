@@ -6,8 +6,7 @@ spring:
 server:
   port: 8001
 spring:
-  profiles: 
-    active: dev
+  profiles: dev
   application:
     name: microservicecloud-config-dept-client
   datasource:
@@ -27,7 +26,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml       # mapper映射文件
 eureka:
   client:
-    serviceUrl:
+    service-url:
 #      defaultZone: http://localhost:7001/eureka
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
