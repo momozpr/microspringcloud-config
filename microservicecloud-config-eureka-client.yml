@@ -5,6 +5,7 @@ spring:
 ---
 server:
   port: 7001
+  context-path: /
 spring:
   profiles: dev
   application:
